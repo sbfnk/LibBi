@@ -6,7 +6,7 @@ negbin - Negative binomial distribution.
 
     x ~ negbin()
     x ~ negbin(1.0, 2.0)
-    x ~ poisson(mean = 1.0, shape = 2.0)
+    x ~ negbin(mean = 1.0, shape = 2.0)
 
 =head1 DESCRIPTION
 
