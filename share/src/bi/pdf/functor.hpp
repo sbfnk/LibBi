@@ -242,7 +242,7 @@ struct poisson_log_density_functor: public std::unary_function<T,T> {
   CUDA_FUNC_BOTH
   T operator()(const T& x) const {
     if (lambda == 0) return (x == 0 ? 0 : -BI_INF);
-    else return x * log(lambda) - lambda + lgamma(x + 1);
+    else return x * log(lambda) - lambda - lgamma(x + 1);
   }
 };
 
