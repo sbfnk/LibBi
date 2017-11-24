@@ -318,6 +318,7 @@ AC_DEFINE_UNQUOTED([ENABLE_DIAGNOSTICS], [$diagnostics])
 
 # Variables for automake
 #AC_SUBST([NVCC], $NVCC)
+AC_SUBST([GPUARCH], $GPUARCH)
 
 # Checks for typedefs, structures, and compiler characteristics
 AC_HEADER_STDBOOL
